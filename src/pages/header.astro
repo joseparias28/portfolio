@@ -1,0 +1,19 @@
+---
+import { Image } from 'astro:assets';
+import miImagen from '../assets/imgs/mi_imagen.jpg';
+---
+
+<header>
+    <div class="perfil">
+        <Image class="img-perfil" src={miImagen} alt="mi-imagen" loading="eager"/>
+        <h1>Jose Arias Pérez</h1>
+    </div>
+	<nav>
+		<ul>
+			<li><a href="#sobre-mi">Sobre mi</a></li>
+			<li><a href="#estudios">Estudios</a></li>
+			<li><a href="#contacto">Contacto</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+		</ul>
+	</nav>
+</header>

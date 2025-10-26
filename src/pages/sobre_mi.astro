@@ -1,0 +1,21 @@
+---
+import { Image } from 'astro:assets';
+import miImagen from '../assets/imgs/mi_imagen.jpg';
+---
+<section id="sobre-mi">
+    <div id="sobre-mi-box">
+        <h2>Sobre mí</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae unde pariatur eum nobis dolorum suscipit, iusto quas sapiente enim, corporis tempora quibusdam soluta molestiae ratione earum minus! Id, animi necessitatibus.
+    </div>
+    <dialog id="sobre-mi-dialog">
+        <div class="perfil">
+        <Image class="img-perfil" src={miImagen} alt="mi-imagen" loading="eager"/>
+        <h1>Jose Arias Pérez</h1>
+        </div>
+        <h2>Sobre mí</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequatur aliquam pariatur quaerat possimus, vitae facilis perspiciatis nulla harum optio autem, odio provident temporibus voluptas atque ipsam quos obcaecati quasi?
+        Repudiandae magnam officiis neque placeat. Ad soluta, aliquid ea, perferendis unde velit deserunt, commodi consequuntur quia non praesentium pariatur necessitatibus molestias fuga asperiores sapiente ab ipsam voluptatibus veritatis cumque magni.
+        Itaque dolores dolorum architecto quidem, numquam suscipit facere, porro asperiores vero veritatis sint non velit nostrum voluptatum maxime ullam. Delectus reiciendis aspernatur autem accusantium suscipit quia assumenda quisquam nam nulla.</p>
+        <button id="close-sobre-mi">Cerrar</button>
+    </dialog>
+</section>

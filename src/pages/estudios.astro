@@ -1,0 +1,26 @@
+---
+import { Image } from 'astro:assets';
+import copernic from '../assets/imgs/logocopernic.png';
+import egara from '../assets/imgs/logoegara.png';
+---
+<section id="estudios">
+    <h2>Formación</h2>
+    <div class="box">
+        <a href="https://www.copernic.cat/ca" target="_blank">
+        <div id="copernic">
+            <Image class="logo" src={copernic} alt="Copernic" />
+            <h3>Institut Nicolau Copèrnic</h3>
+            <h4>Desarrollo de Aplicaciones Web</h4>
+            <p>Setiembre 2024 - Actualidad</p>
+        </div>
+        </a>
+        <a href="https://agora.xtec.cat/iesegara/" target="_blank">
+        <div id="egara">
+            <Image class="logo" src={egara} alt="Egara" />
+            <h3>Institut Ègara</h3>
+            <h4>Bachillerato Científico-Tecnológico</h4>
+            <p>Setiembre 2022 - Junio 2024</p>
+        </div>
+        </a>
+    </div>
+</section>

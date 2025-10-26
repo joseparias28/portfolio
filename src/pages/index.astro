@@ -1,0 +1,27 @@
+---
+import Header from './header.astro';
+import Sobre_mi from './sobre_mi.astro';
+import Aptitudes from './aptitudes.astro';
+import Estudios from './estudios.astro';
+import '../assets/styles/global.css';
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Jose Arias Pérez</title>
+	</head>
+	<body>
+		<Header />
+		<div id="main-content">
+		<Sobre_mi />
+		<Aptitudes />
+		</div>
+		<Estudios />
+
+	</body>
+	<script src="../assets/js/dialog.js"></script>
+</html>

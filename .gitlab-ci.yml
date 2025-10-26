@@ -1,12 +1,16 @@
 # The Docker image that will be used to build your app
-image: busybox
+image: node:lts
+
 pages:
   stage: deploy
   script:
-    - echo "The site will be deployed to $CI_PAGES_URL"
+    - npm ci
+    - npm run build
+  artifacts:
+    paths:
+      - dist
   pages:
-    # The folder that contains the files to be exposed at the Page URL
-    publish: public
+    path_prefix: dist
   rules:
     # This ensures that only pushes to the default branch will trigger
     # a pages deploy

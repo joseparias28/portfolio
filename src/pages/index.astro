@@ -3,6 +3,8 @@ import Header from './header.astro';
 import Sobre_mi from './sobre_mi.astro';
 import Aptitudes from './aptitudes.astro';
 import Estudios from './estudios.astro';
+import Idiomas from './idiomas.astro';
+import Conocimientos from './conocimientos.astro';
 import '../assets/styles/global.css';
 ---
 
@@ -16,11 +18,16 @@ import '../assets/styles/global.css';
 	</head>
 	<body>
 		<Header />
-		<div id="main-content">
-		<Sobre_mi />
-		<Aptitudes />
+		<div id="content-line-up">
+			<Sobre_mi />
+			<Aptitudes />
 		</div>
 		<Estudios />
+		<div id="content-line-down">
+			<Idiomas />
+			<Conocimientos />
+		</div>
+		
 
 	</body>
 	<script src="../assets/js/dialog.js"></script>

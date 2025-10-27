@@ -11,7 +11,7 @@ header{
         display: flex;
         gap: 50px;
         color: var(--color-nav);
-        margin-right: 100px;
+        margin-right: 20px;
         padding: 0;
         font-family: var(--font-nav);
         font-weight: bold;
@@ -48,12 +48,20 @@ body {
     background-color: var(--color-bg);
 }
 
-#main-content {
+#content-line-up {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
     padding: 20px;
-    align-items: start;
+    align-items: stretch;
+}
+
+#content-line-down {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+    align-items: stretch;
 }
 
 #sobre-mi {
@@ -70,6 +78,11 @@ body {
     height: 100%;
     box-sizing: border-box;
     background-color: var(--color-bg-box);
+    & h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
 }
 
 #aptitudes {
@@ -81,6 +94,11 @@ body {
     height: 100%;
     box-sizing: border-box;
     background-color: var(--color-bg-box);
+    & h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
 }
 
 #aptitudes ul {
@@ -138,7 +156,36 @@ dialog {
     }
 }
 
-@media (max-width: 1000px) {
+#idiomas {
+    padding: 20px;
+    border: 2px solid var(--color-nav);
+    border-radius: 10px;
+    font-family: var(--font-family);
+    background-color: var(--color-bg-box);
+    & h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+#conocimientos {
+    padding: 20px;
+    border: 2px solid var(--color-nav);
+    border-radius: 10px;
+    font-family: var(--font-family);
+    background-color: var(--color-bg-box);
+    & h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+#conocimientos ul {
+    columns: 2;
+    column-gap: 10px;
+}
+
+@media (max-width: 1320px) {
     header {
         flex-direction: column;
         gap: 15px;
@@ -149,7 +196,11 @@ dialog {
 }
 
 @media (max-width: 768px) {
-    #main-content {
+    #content-line-up {
+        grid-template-columns: 1fr;
+    }
+
+    #content-line-down {
         grid-template-columns: 1fr;
     }
     
@@ -164,6 +215,10 @@ dialog {
     }
     
     #aptitudes ul {
+        columns: 1;
+    }
+
+    #conocimientos ul {
         columns: 1;
     }
 }
